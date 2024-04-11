@@ -1,0 +1,95 @@
+:root {
+    /* Setup my colors */
+    --main-color: #1163af;
+    --secondary-color: #747474;
+    --tertiary-color: #ffffff;
+    --accent-color: #719ff4;
+    --second-accent-color: #000000;
+    --text-color: #000000;
+    --header-text-color: white;
+    --aside-color: #C3D4DE;
+}
+
+body, html {
+    background-color: var(--tertiary-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: var(--main-color);
+    color: var(--header-text-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 3px solid var(--second-accent-color);
+}
+
+.toggle-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+
+main {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+/* Left panel */
+aside {
+    background-color: var(--aside-color);
+    border-right: 3px solid var(--second-accent-color);
+    
+    flex: 2;
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* For the J Icon */
+aside img {
+    width: 470px;
+    max-height: 100%;
+
+}
+
+/* Form Elements */
+section {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    aside, section {
+        flex: none;
+        width: 100%;
+    }
+}

@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <title>J's Blog!</title>
 </head>
 <body>
-    
+    <!-- Header with button -->
+    <header>
+        <button class="toggle-button">J</button>
+        <h1>J's Blog!</h1>
+    </header>
+
+    <main>
+        <aside>
+            <!-- Blue J Icon -->
+            <img src="./Assets/images/blue-icon.jpg" alt="a blue letter J Icon">
+        </aside>
+        
+        <section>
+            <h2>Start chatting on J's Blog!</h2>
+            <form>
+                <!-- Message Form -->
+                <label for="messageUsername">Username:</label>
+                <input name="username" id="messageUsername" type="text"/>
+
+                <label for="messageTitle">Title:</label>
+                <input name="title" id="messageTitle" type="text"/>
+
+                <label for="messageContent">Content:</label>
+                <textarea name="content" id="messageContent"    type="text" rows="4"></textarea>
+
+                <input type="submit" value="Send Message!"/>
+            </form>
+        </section>
+    </main>
+    <!-- Scripts -->
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 </html>
